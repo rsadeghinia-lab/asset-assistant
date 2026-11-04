@@ -1,0 +1,31 @@
+{
+  "id": "./",
+  "name": "دستیار اموال دانشگاه",
+  "short_name": "دستیار اموال",
+  "description": "اموال‌گردانی با اکسل، بارکدخوان بلوتوثی، ثبت مغایرت و خروجی اکسل فارسی",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#f2f5fa",
+  "theme_color": "#142a45",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

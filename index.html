@@ -1,0 +1,452 @@
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>دستیار اموال دانشگاه — نسخه اندروید ۲.۰</title><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#142a45"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="application-name" content="دستیار اموال"><meta name="mobile-web-app-capable" content="yes"><meta name="description" content="دستیار اموال‌گردانی دانشگاه؛ ورود اکسل، ثبت مشاهدات، بارکدخوان بلوتوثی و گزارش‌های فارسی"><link rel="apple-touch-icon" href="./icons/icon-192.png"><style>
+:root{font-family:Tahoma,Arial,sans-serif;color:#18283b;background:#f2f5fa}*{box-sizing:border-box}body{margin:0}header{background:#142a45;color:white;padding:20px 5vw}header h1{margin:0;font-size:24px}header p{margin:8px 0 0;color:#bcd1e5;font-size:13px}.wrap{max-width:1200px;margin:auto;padding:22px 16px 60px}.notice{background:#fff6df;border:1px solid #e8d5a1;border-radius:12px;padding:12px;margin-bottom:16px;font-size:13px;line-height:2}nav{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}.tab{border:1px solid #d2ddeb;background:#fff;padding:12px 20px;border-radius:10px;cursor:pointer;font-weight:bold;color:#24415d}.tab.active{background:#17699f;color:white}.panel{display:none}.panel.active{display:block}.card{background:white;border:1px solid #dce3ec;border-radius:14px;padding:20px;margin:12px 0;box-shadow:0 3px 14px #10294308}h2{font-size:19px;margin:0 0 16px}h3{font-size:15px;margin:8px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.stat{background:#eaf2fa;padding:20px;border-radius:13px}.stat strong{display:block;font-size:30px}.muted{color:#6a7b8e;font-size:13px;line-height:1.9}label{display:block;font-size:13px;font-weight:bold;margin:10px 0 5px}input,select,textarea{width:100%;border:1px solid #cbd7e6;border-radius:9px;padding:12px;background:white;font:inherit;font-size:14px}textarea{min-height:82px}button{font:inherit;cursor:pointer}.primary,.secondary,.danger{border:0;padding:12px 17px;border-radius:9px;font-weight:bold;margin:5px 0}.primary{background:#156ca7;color:white}.secondary{background:#e6eff7;color:#254d71}.danger{background:#ffebeb;color:#932c30}.flex{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:15px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px;min-width:660px}th,td{text-align:right;border-bottom:1px solid #e4e9ef;padding:11px 8px;vertical-align:middle}th{background:#edf3f8;white-space:nowrap}.pill{display:inline-block;border-radius:50px;background:#e7f0f6;padding:5px 9px;font-size:12px}.bad{color:#b22727}.ok{color:#167e57}.hidden{display:none!important}#video{width:100%;max-height:280px;background:black;border-radius:12px;object-fit:contain}#roomBody tr.room-selected td{background:#dcecff!important;border-top:2px solid #2778b4;border-bottom:2px solid #2778b4}#roomBody tr.room-selected td:first-child{border-right:4px solid #2778b4}#roomBody tr.room-seen:not(.room-selected) td{background:#eff9f2}#roomBody tr.room-selected button{background:#145781;color:#fff}#roomBody tr.room-seen:not(.room-selected) button{background:#d5eee0;color:#176a3b}.bt-panel{margin:12px 0;padding:14px;background:#f0f7ff;border:2px solid #a1c7e9;border-radius:12px;line-height:1.9}.bt-panel:focus-within{border-color:#17699f}.bt-switch{display:inline-flex;align-items:center;gap:8px;margin:3px 0;font-weight:normal}.bt-switch input{width:20px;height:20px;margin:0;accent-color:#17699f}.bt-active{background:#daf5e6!important;color:#175b39}.bt-idle{background:#fff0cd!important;color:#8a5700}#scanInput.bt-scan-focus{outline:3px solid #1f9a6d;outline-offset:2px}@media(min-width:700px){#survey .card{padding:22px}#survey button{min-height:44px}}footer{color:#617286;text-align:center;font-size:12px;padding:30px 0}.note{border-right:4px solid #1f83ba;padding:8px 13px;background:#eef7ff;border-radius:8px;font-size:13px;line-height:2}a{color:#116997}@media(max-width:600px){header h1{font-size:20px}.card{padding:13px}.tab{padding:10px 13px;font-size:12px}}
+</style></head><body><header><h1>دستیار اموال دانشگاه</h1><p>نسخه ۲.۰ · ویژه تبلت اندرویدی و بارکدخوان بلوتوثی · مبتنی بر اکسل</p></header><main class="wrap"><div class="notice"><b>نسخه آزمایشی ۲.۰ برای نصب روی تبلت (مبتنی بر ورود اکسل ۱.۳):</b> سه رکورد نمونه با شماره‌های ۸۶۹۹۶، ۸۶۹۹۷ و ۸۶۹۹۸ بارگذاری شده‌اند. اطلاعات در همین مرورگر ذخیره می‌شوند و بین دستگاه‌ها همگام‌سازی نمی‌شوند. داده‌های نمونه به‌درستی در برنامه قابل جست‌وجو هستند؛ برای کار واقعی از خروجی پشتیبان استفاده کنید. اسکن بارکد با دوربین در مرورگرهای پشتیبان و در بستر امن (HTTPS یا localhost) فعال می‌شود. خواندن شماره معمولی چاپی (OCR) هنوز پیاده‌سازی نشده است.</div>
+<nav><button class="tab active" data-tab="dash">داشبورد</button><button class="tab" data-tab="import">ورود اطلاعات</button><button class="tab" data-tab="survey">اموال‌گردانی</button><button class="tab" data-tab="report">مغایرت‌ها و گزارش</button></nav>
+<section id="dash" class="panel active"><div class="grid"><div class="stat">اموال مبنا<strong id="nAssets">۰</strong></div><div class="stat">اموال مشاهده‌شده<strong id="nSeen">۰</strong></div><div class="stat">مغایرت‌های ثبت‌شده<strong id="nIssues">۰</strong></div><div class="stat">اموال بررسی‌نشده<strong id="nMissing">۰</strong></div></div><div class="card"><h2>نصب برنامه روی تبلت اندرویدی</h2><p class="muted">این برنامه به‌صورت وب‌اپ نصب‌شدنی (PWA) منتشر می‌شود و فایل APK نیست. پس از بارگذاری روی سایت دارای HTTPS، آدرس را در Chrome تبلت باز کنید، منوی سه‌نقطه را بزنید و «Install app / نصب برنامه» یا «Add to Home screen / افزودن به صفحه اصلی» را انتخاب کنید. اولین بار اتصال اینترنت لازم است؛ پس از بارگذاری کامل، بخش‌های اصلی برنامه می‌توانند بدون اینترنت اجرا شوند. تشخیص صوتی ممکن است به اینترنت نیاز داشته باشد.</p><p class="note">اتصال بارکدخوان: ابتدا در تنظیمات Bluetooth تبلت آن را جفت کنید، سپس در بخش اموال‌گردانی «آماده دریافت اسکن» را بزنید. بارکدخوان باید از HID Keyboard پشتیبانی کند و بهتر است پس از هر اسکن Enter بفرستد.</p><p class="muted">اطلاعات اموال در همین مرورگر تبلت ذخیره می‌شود؛ برای جلوگیری از ازدست‌رفتن داده، پس از هر نوبت کار پشتیبان JSON بگیرید. پاک‌کردن داده‌های سایت یا حذف مرورگر ممکن است داده‌های محلی را پاک کند.</p></div><div class="card"><h2>راهنمای آزمایش</h2><p>۱. از بخش «ورود اطلاعات»، فایل CSV صادرشده از اکسل سامانه را وارد کنید یا با سه رکورد نمونه شروع کنید.</p><p>۲. در «اموال‌گردانی» محل را انتخاب و شماره پلاک را وارد یا بارکد را اسکن کنید.</p><p>۳. وضعیت فیزیکی، محل واقعی و تحویل‌گیرنده واقعی را ثبت کنید و مغایرت‌ها را در بخش گزارش ببینید.</p><div class="note">«بررسی‌نشده» به معنای «مفقود» نیست. تنها پس از بستن بررسی همان محدوده می‌توان اقلام مشاهده‌نشده را برای پیگیری گزارش کرد.</div></div></section>
+<section id="import" class="panel"><div class="card"><h2>ورود اطلاعات مبنا</h2><p class="muted">فایل اصلی اکسل XLS/XLSX حتی با حجم حدود ۱٫۸ مگابایت قابل انتخاب است؛ برای ذخیره فهرست بزرگ از IndexedDB استفاده می‌شود. فرمت XLSX در Chrome/Edge جدید بدون کتابخانه اینترنتی خوانده می‌شود؛ XLS قدیمی نیازمند تبدیل به XLSX یا کتابخانه خارجی است. CSV و کپی جدول بدون اینترنت کار می‌کنند. ستون‌های لازم: شماره پلاک، عنوان کالا، نام دفتر مالی، نام انبار، مکان، تحویل گیرنده. برای فایل XLS قدیمی بهتر است از Excel گزینه Save As و فرمت XLSX را انتخاب کنید.</p><input type="file" id="csvFile" accept=".xls,.xlsx,.csv,.tsv,.txt,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv"><p id="fileStatus" class="muted" role="status" aria-live="polite">XLSX در همین مرورگر پردازش می‌شود؛ برای XLS قدیمی بهتر است فایل را XLSX ذخیره کنید. داده‌ها به سروری ارسال نمی‌شوند.</p><div id="previewArea" class="hidden card" style="background:#f7fafc"><h3>پیش‌نمایش و تطبیق ستون‌های فایل</h3><p id="previewError" class="note hidden" style="background:#ffecec;border-right-color:#bb3434;color:#922c2c" role="alert"></p><p class="muted">اگر عنوان ستون در فایل متفاوت است، ستون صحیح را دستی انتخاب کنید. اطلاعات تا تأیید شما جایگزین نمی‌شوند.</p><div class="note" id="mappingNotice">اگر ستون «شماره پلاک» خودکار انتخاب نشد، از فهرست مقابل آن ستون صحیح را مشخص کنید.</div><label for="headerRowSelect">سطر عنوان‌های اکسل (برای فایل‌هایی که بالای جدول عنوان گزارش دارند)</label><select id="headerRowSelect"></select><div id="mapping" class="grid"></div><p id="previewText" class="muted"></p><div class="tablewrap"><table><tbody id="previewTable"></tbody></table></div><button class="primary" id="confirmImport">تأیید ستون‌ها و ورود اطلاعات</button><p id="confirmHelp" class="muted" role="status" aria-live="polite"></p><button class="secondary" id="cancelImport">انصراف</button></div><label>ورود سریع از اکسل (کپی سلول‌ها همراه با سطر عنوان)</label><textarea id="pasteExcel" placeholder="در اکسل، سطر عنوان و داده‌ها را انتخاب و Copy کنید؛ سپس اینجا Paste کنید."></textarea><button class="primary" id="importPaste">بارگذاری اطلاعات جای‌گذاری‌شده</button><div class="flex"><button class="secondary" id="resetDemo">بازگرداندن داده نمونه</button><button class="secondary" id="exportBackup">پشتیبان کامل JSON</button><button class="secondary" id="importBackupBtn">بازیابی پشتیبان JSON</button><input type="file" id="backupFile" accept=".json" class="hidden"></div><p id="importMsg" class="muted"></p><div class="note">ورود فایل مبنای جدید، سوابق اموال‌گردانی قبلی را پس از تأیید شما پاک می‌کند. شماره پلاک باید یکتا باشد؛ پلاک تکراری پذیرفته نمی‌شود.</div></div><div class="card"><h2>فهرست اموال مبنا</h2><p class="muted" id="assetListNote"></p><div class="tablewrap"><table><thead><tr><th>شماره</th><th>شرح مال</th><th>دفتر مالی</th><th>دانشکده / واحد</th><th>مکان</th><th>تحویل‌گیرنده</th></tr></thead><tbody id="assetsBody"></tbody></table></div></div></section>
+<section id="survey" class="panel"><div class="card"><h2>انتخاب محل اموال‌گردانی</h2><div class="grid"><div><label>دفتر مالی</label><select id="finance"></select></div><div><label>انبار (دانشکده / واحد)</label><select id="unit"></select></div><div><label for="placeSearch">جست‌وجوی مکان (نام یا شماره اتاق)</label><input id="placeSearch" autocomplete="off" placeholder="مثلاً اتاق ۱۲۸ یا راهرو"><label for="place">مکان (از فهرست انتخاب کنید)</label><select id="place"></select><p id="placeSearchStatus" class="muted" aria-live="polite"></p></div></div><p class="muted" id="placeCount"></p></div><div class="card"><h2>شناسایی مال</h2><div class="note">برای اموال فاقد پلاک یا با پلاک مخدوش، از گزینه‌های زیر استفاده کنید. هر مورد با شناسه موقت ثبت می‌شود. مقایسه با اموال بررسی‌نشده فقط پس از اعلام پایان اموال‌گردانی فعال می‌شود؛ هیچ شماره پلاک جدیدی صادر نمی‌شود.</div><div class="flex"><button class="secondary" id="noPlateBtn" type="button">ثبت مال فاقد پلاک</button><button class="secondary" id="damagedPlateBtn" type="button">ثبت پلاک مخدوش</button></div><div id="unlabeledPanel" class="card hidden" style="border:2px solid #b7cbdc"><h3 id="unlabeledHeading">ثبت مال فاقد پلاک</h3><p class="muted">این مورد با شناسه موقت ذخیره می‌شود. از اطلاعات موجود حداقل شرح مال را بنویسید؛ پیشنهادهای مشابه، تطبیق قطعی نیستند.</p><div class="grid"><div><label>شرح مال *</label><input id="unlabelTitle" placeholder="مثلاً میز اداری فلزی"></div><div><label>شماره قابل خواندن از پلاک مخدوش (اختیاری)</label><input id="partialPlate" inputmode="text" placeholder="مثلاً 86?9"></div><div><label>تحویل‌گیرنده مشاهده‌شده</label><input id="unlabelHolder" list="holderSuggestions" placeholder="نام یا نامشخص"></div><div><label>وضعیت فیزیکی</label><select id="unlabelCondition"><option>سالم</option><option>آسیب جزئی</option><option>نیازمند تعمیر</option><option>غیرقابل استفاده</option><option>نیازمند بررسی</option></select></div><div><label>نام مأمور ثبت‌کننده *</label><input id="unlabelAgent"></div></div><label>توضیحات / مشخصات قابل تشخیص</label><textarea id="unlabelNotes" placeholder="رنگ، مدل، شماره سریال، مشخصات متمایزکننده"></textarea><div class="flex"><button class="primary" id="saveUnlabeled" type="button">ثبت موقت بدون صدور پلاک</button><button class="secondary" id="cancelUnlabeled" type="button">انصراف</button></div><p class="muted" id="unlabelMsg" role="status"></p></div><div class="two"><div><label>شماره پلاک</label><input inputmode="numeric" id="scanInput" placeholder="شماره را وارد کنید یا اسکن کنید"><div id="bluetoothScannerBox" class="bt-panel" aria-label="راهنمای بارکدخوان بلوتوثی"><div class="flex"><strong>حالت بارکدخوان بلوتوثی / USB</strong><span class="pill" id="btReady" role="status" aria-live="polite">آماده‌سازی اسکن</span></div><p class="muted">ابتدا بارکدخوان را در تنظیمات Bluetooth تبلت جفت کنید و حالت <b>HID Keyboard</b> با پسوند <b>Enter</b> (یا Tab) را در بارکدخوان فعال کنید؛ اتصال بلوتوث در خود تبلت انجام می‌شود، نه در این صفحه. سپس «آماده دریافت اسکن» را بزنید.</p><div class="flex"><button type="button" class="primary" id="btFocus">⌁ آماده دریافت اسکن</button><label class="bt-switch"><input type="checkbox" id="btAfterSave" checked> آماده‌سازی خودکار پس از ثبت</label></div><p class="muted" id="btHelp" aria-live="polite">اسکن با Enter به‌صورت خودکار جست‌وجو می‌شود. اگر اسکنر پسوند ندارد، دکمه «جست‌وجوی مال» را بزنید. این صفحه وضعیت واقعی اتصال بلوتوث را تشخیص نمی‌دهد.</p><p id="btLast" class="muted" aria-live="polite">آخرین شماره خوانده‌شده: —</p></div><div class="note" style="margin-top:8px">ورود صوتی فارسی: عدد کامل مانند «دوازده هزار و چهارصد و پنج» یا رقم‌به‌رقم مانند «یک دو چهار صفر پنج». شماره را قبل از جست‌وجو تأیید کنید.</div><div class="flex"><button class="secondary" id="voiceStart" type="button">🎤 گفتن شماره پلاک</button><button class="secondary hidden" id="voiceStop" type="button">توقف ضبط</button></div><div class="note hidden" id="voicePanel" style="margin:8px 0"><div id="voiceText" class="muted"></div><label>شماره تشخیص‌داده‌شده (قابل اصلاح)</label><input id="voiceNumber" inputmode="numeric" placeholder="شماره را کنترل کنید"><button class="primary" type="button" id="voiceConfirm">تأیید شماره و جست‌وجو</button><button class="secondary" type="button" id="voiceCancel">انصراف</button><p id="voiceStatus" class="muted" role="status"></p></div><div class="flex"><button class="primary" id="lookup">جست‌وجوی مال</button><button class="secondary" id="startCamera">اسکن بارکد با دوربین</button><button class="secondary hidden" id="stopCamera">بستن دوربین</button><button class="secondary" id="photoBarcodeBtn">خواندن بارکد از عکس</button><input type="file" id="barcodePhoto" accept="image/*" capture="environment" class="hidden"></div><p class="muted" id="barcodeHelp">بارکدخوان USB/بلوتوث در حالت HID مانند صفحه‌کلید کار می‌کند. «آماده دریافت اسکن» را بزنید؛ برای جست‌وجوی خودکار، پسوند Enter یا Tab را روی بارکدخوان فعال کنید.</p><p class="muted" id="scanMsg" role="status" aria-live="polite"></p><video id="video" playsinline muted class="hidden"></video><div id="cameraStatus" class="note hidden" role="status"></div></div><div id="assetFound" class="hidden"><h3>ثبت مال مشاهده‌شده</h3><div id="assetDetails" class="note"></div><div id="unknownFields" class="hidden"><div class="note">شماره در اکسل مبنا یافت نشد؛ این مشاهده به عنوان «مال خارج از فهرست» ذخیره می‌شود و خودکار به فهرست اصلی اضافه نخواهد شد.</div><label>شرح مال مشاهده‌شده (اختیاری)</label><input id="unknownTitle" placeholder="مثلاً میز اداری"></div><label>محل مشاهده واقعی</label><input id="actualPlace" readonly><label>تحویل‌گیرنده واقعی</label><input id="actualHolder" list="holderSuggestions" autocomplete="off" placeholder="نام را بنویسید یا از فهرست انتخاب کنید"><datalist id="holderSuggestions"></datalist><p class="muted">نام تحویل‌گیرنده قابل تایپ است و اسامی موجود در فایل به‌عنوان پیشنهاد نمایش داده می‌شوند.</p><label>وضعیت فیزیکی</label><select id="condition"><option value="سالم">سالم</option><option value="آسیب جزئی">آسیب جزئی</option><option value="نیازمند تعمیر">نیازمند تعمیر</option><option value="غیرقابل استفاده">غیرقابل استفاده</option><option value="نیازمند بررسی">نیازمند بررسی</option></select><label>یادداشت / شماره مجوز (اختیاری)</label><textarea id="notes" placeholder="توضیحات، شماره مجوز یا دلیل مغایرت"></textarea><label>نام مأمور</label><input id="agent" placeholder="نام مأمور اموال‌گردانی"><button class="primary" id="saveObs">ثبت مشاهده و مغایرت</button></div></div></div><div class="card"><h2>اموال ثبت‌شده در محل انتخابی</h2><p class="muted">ردیف انتخاب‌شده با رنگ آبی و علامت «✓ انتخاب شده» مشخص می‌شود؛ ردیف‌های ثبت‌شده با رنگ سبز کم‌رنگ نمایش داده می‌شوند. انتخاب به‌تنهایی به‌معنی ثبت مشاهده نیست.</p><div class="tablewrap"><table><thead><tr><th>شماره</th><th>شرح</th><th>وضعیت</th><th>انتخاب</th></tr></thead><tbody id="roomBody"></tbody></table></div></div></section>
+<section id="report" class="panel"><div class="card"><h2>راهنمای خروجی‌های اکسل</h2><p class="muted">فایل‌ها با نام فارسی و عنوان ستون‌های فارسی تهیه می‌شوند. در اکسل، سطر عنوان با زمینه سرمه‌ای، پهنای خوانا و متن چندخطی نمایش داده می‌شود. گزارش‌های موقت در طول عملیات قابل دریافت‌اند؛ گزارش جامع نهایی و اصلاحات تأییدشده پس از اعلام پایان دوره فعال می‌شوند. خروجی مستقل بررسی‌نشده‌ها حفظ شده است.</p></div><div class="card"><h2>پایان عملیات و شروع تطبیق</h2><p class="muted">در طول اموال‌گردانی فقط مشاهدات جمع‌آوری می‌شوند. پس از اتمام مراجعه به اتاق‌های محدوده، مسئول می‌تواند مرحله تطبیق با اموال بررسی‌نشده را فعال کند. این کار هیچ شماره پلاکی صادر نمی‌کند و فایل اکسل مبنا را تغییر نمی‌دهد.</p><div class="flex"><button id="closeSurvey" class="primary" type="button">اعلام پایان اموال‌گردانی و آغاز تطبیق</button><button id="reopenSurvey" class="secondary hidden" type="button">بازگشایی اموال‌گردانی</button></div><div id="reviewStage" class="note" role="status"></div></div><div class="card"><h2>رسیدگی به اموال فاقد پلاک / پلاک مخدوش</h2><p class="muted">پس از اعلام پایان عملیات، برای هر مورد حداکثر ۱۰ گزینه مشابه از اموال بررسی‌نشده پیشنهاد داده می‌شود. امتیاز فقط یک راهنمای جست‌وجو است. تأیید یا رد باید توسط مسئول انجام شود؛ تأیید صرفاً وضعیت این دوره اموال‌گردانی را اصلاح می‌کند و فایل اصلی اکسل را تغییر نمی‌دهد.</p><div id="unlabeledCases"></div></div><div class="card"><h2>تأیید مغایرت محل و تحویل‌گیرنده</h2><p class="muted">فقط بعد از اعلام پایان اموال‌گردانی، مسئول می‌تواند اصلاحات پیشنهادی را تأیید یا رد کند. تأیید صرفاً در همین برنامه ثبت می‌شود؛ اکسل اصلی تغییر نمی‌کند.</p><div id="observationReviews"></div></div><div class="card"><h2>گزارش و مغایرت‌ها</h2><div class="flex"><button class="primary" id="exportCsv">خروجی CSV مغایرت‌ها و مشاهدات</button><button class="secondary" id="exportSeen">خروجی مستقل اموال مشاهده‌شده</button><button class="secondary" id="exportIssues">خروجی مستقل مغایرت‌ها</button><button class="secondary" id="exportUnseen">خروجی اموال بررسی‌نشده</button><button class="secondary" id="exportUnlabeled">خروجی فاقد پلاک و تطبیق‌ها</button><button class="secondary" id="exportFinal">گزارش جامع نهایی XLSX</button><button class="secondary" id="exportCorrections">اکسل اصلاحات تأییدشده برای سامانه</button><button class="secondary" id="exportPending">خروجی موارد تعیین‌تکلیف‌نشده</button><button class="danger" id="clearObs">پاک‌کردن مشاهدات آزمایشی</button></div><p class="muted">اموال بررسی‌نشده کل مجموعه به معنی مفقودی نیستند. همه موارد فاقد پلاک و پلاک مخدوش از لحظه ثبت در جدول مغایرت‌ها نمایش داده می‌شوند؛ تأیید تطبیق فقط پس از پایان دوره امکان‌پذیر است.</p><div class="tablewrap"><table><thead><tr><th>شماره</th><th>شرح</th><th>محل مبنا</th><th>محل مشاهده</th><th>تحویل‌گیرنده مبنا</th><th>تحویل‌گیرنده واقعی</th><th>وضعیت</th><th>مغایرت</th><th>عملیات</th></tr></thead><tbody id="reportBody"></tbody></table></div></div></section><footer>نسخه ۲.۰ — قابل نصب روی اندروید و سازگار با بارکدخوان بلوتوثی · بدون ارسال اطلاعات به سرور · نسخه آزمایشی؛ برای اطلاعات محرمانه فقط روی تبلت سازمانی مدیریت‌شده، با رعایت ضوابط امنیتی استفاده شود</footer></main>
+<script>
+const DEMO=[{"id": "86996", "title": "چای ساز و قهوه ساز", "finance": "کالج دانشگاه", "unit": "کالج دانشگاه", "place": "اتاق 10", "holder": "تحویل‌گیرنده آزمایشی ۱", "group": "اثاثیه برقی", "code": "1759"}, {"id": "86997", "title": "کمد کارگاهی و آزمایشگاهی", "finance": "کالج دانشگاه", "unit": "کالج دانشگاه", "place": "اتاق 128", "holder": "تحویل‌گیرنده آزمایشی ۲", "group": "ابزارآلات و تجهیزات کارگاهی", "code": "303"}, {"id": "86998", "title": "جعبه کمک‌های اولیه", "finance": "کالج دانشگاه", "unit": "کالج دانشگاه", "place": "راهرو", "holder": "تحویل‌گیرنده آزمایشی ۳", "group": "سایر", "code": "1090311658"}]; const KEY='asset_assistant_pilot_v03'; const $=id=>document.getElementById(id);
+// IndexedDB removes localStorage's small quota for large university registers.
+let state={assets:DEMO,observations:[],unlabeled:[],reconciliationClosed:false};
+let dbPromise=null;let storageErrorShown=false;
+function openDB(){if(dbPromise)return dbPromise;dbPromise=new Promise((resolve,reject)=>{if(!window.indexedDB){reject(Error('IndexedDB در این مرورگر در دسترس نیست'));return}const r=indexedDB.open('university_asset_assistant_v06',1);r.onupgradeneeded=()=>{if(!r.result.objectStoreNames.contains('data'))r.result.createObjectStore('data')};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)});return dbPromise}
+async function storeState(data){const db=await openDB();return new Promise((resolve,reject)=>{const tx=db.transaction('data','readwrite');tx.objectStore('data').put(data,'state');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);tx.onabort=()=>reject(tx.error)})}
+async function readState(){const db=await openDB();return new Promise((resolve,reject)=>{const tx=db.transaction('data','readonly');const r=tx.objectStore('data').get('state');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}
+let writeQueue=Promise.resolve();function save(){const snapshot=state;const result=writeQueue.catch(()=>{}).then(()=>storeState(snapshot));writeQueue=result.catch(e=>{console.error(e);if(!storageErrorShown){storageErrorShown=true;alert('ذخیره‌سازی ناموفق است. لطفاً فایل پشتیبان JSON تهیه کنید. خطا: '+e.message)}});return result}
+async function restore(){try{let loaded=await readState();if(!loaded){try{const old=JSON.parse(localStorage.getItem(KEY));if(old?.assets?.length&&Array.isArray(old.observations))loaded=old}catch(e){}}if(loaded&&Array.isArray(loaded.assets)&&Array.isArray(loaded.observations)){state=loaded;state.unlabeled=Array.isArray(state.unlabeled)?state.unlabeled:[];state.reconciliationClosed=!!state.reconciliationClosed;await save()}}catch(e){console.warn('Storage initialization:',e);$('importMsg').textContent='هشدار: ذخیره‌سازی دائمی مرورگر فعال نیست؛ پس از آزمون حتماً پشتیبان تهیه کنید.'}refresh();}
+const norm=s=>String(s??'').trim().replace(/[۰-۹]/g,c=>String('۰۱۲۳۴۵۶۷۸۹'.indexOf(c))).replace(/[٠-٩]/g,c=>String('٠١٢٣٤٥٦٧٨٩'.indexOf(c))).replace(/[ي]/g,'ی').replace(/[ك]/g,'ک').replace(/\s+/g,' ');
+const num=s=>norm(s).replace(/[^0-9]/g,'');const text=s=>String(s??'');const full=a=>[a.finance,a.unit,a.place].map(norm).join(' | ');
+const el=(tag,content)=>{const e=document.createElement(tag);e.textContent=text(content);return e}; const setRows=(id,rows)=>{const b=$(id);b.replaceChildren(); rows.forEach(cells=>{const tr=document.createElement('tr');cells.forEach(cell=>{const td=document.createElement('td');if(cell instanceof Node)td.append(cell);else td.textContent=text(cell);tr.append(td)});b.append(tr)})};
+function selectOptions(id,values,prev){const s=$(id);s.replaceChildren();values.forEach(v=>{const opt=new Option(v,v);s.add(opt)});if(values.includes(prev))s.value=prev;}
+function refreshLocations(){
+ let f=$('finance').value,u=$('unit').value,p=$('place').value;
+ selectOptions('finance',[...new Set(state.assets.map(a=>a.finance))].sort(),f);f=$('finance').value;
+ selectOptions('unit',[...new Set(state.assets.filter(a=>a.finance===f).map(a=>a.unit))].sort(),u);u=$('unit').value;
+ const all=[...new Set(state.assets.filter(a=>a.finance===f&&a.unit===u).map(a=>a.place))].sort();
+ const q=norm($('placeSearch').value).toLowerCase();const matched=q?all.filter(v=>norm(v).toLowerCase().includes(q)):all;
+ const s=$('place');s.replaceChildren();s.add(new Option('— انتخاب مکان —',''));
+ matched.forEach(v=>s.add(new Option(v,v)));
+ if(matched.includes(p))s.value=p;
+ else if(matched.length===1)s.value=matched[0];
+ else s.value='';
+ $('placeSearchStatus').textContent=`${matched.length} مکان از ${all.length} مکان مربوط به این دفتر مالی و انبار یافت شد؛ مکان صحیح را انتخاب کنید.`;
+} 
+function currentLoc(){return {finance:$('finance').value,unit:$('unit').value,place:$('place').value}};
+function sameLoc(a,b){return norm(a.finance)===norm(b.finance)&&norm(a.unit)===norm(b.unit)&&norm(a.place)===norm(b.place)}
+function issues(a,o){if(!a)return 'مال خارج از فهرست اکسل — نیازمند بررسی';let out=[];if(!sameLoc(a,o))out.push('مغایرت محل');if(norm(a.holder)!==norm(o.holder))out.push('مغایرت تحویل‌گیرنده');if(o.condition!=='سالم')out.push('وضعیت فیزیکی: '+o.condition);return out.join('، ')||'بدون مغایرت'}
+function refreshHolders(){const d=$('holderSuggestions');d.replaceChildren();for(const name of [...new Set(state.assets.map(a=>norm(a.holder)).filter(Boolean))].sort())d.append(new Option(name,name));}
+let assetById=new Map();function refresh(){if(!Array.isArray(state.unlabeled))state.unlabeled=[];assetById=new Map(state.assets.map(a=>[num(a.id),a]));refreshLocations();refreshHolders();const known=new Set(state.assets.map(a=>num(a.id)));const seen=new Set([...state.observations.filter(o=>known.has(num(o.id))).map(o=>num(o.id)),...state.unlabeled.filter(o=>o.status==='approved'&&known.has(num(o.matchId))).map(o=>num(o.matchId))]);$('nAssets').textContent=state.assets.length;$('nSeen').textContent=state.observations.length;$('nMissing').textContent=state.assets.filter(a=>!seen.has(num(a.id))).length;$('nIssues').textContent=state.observations.filter(o=>{const a=assetById.get(num(o.id));return issues(a,o)!=='بدون مغایرت'}).length+state.unlabeled.filter(o=>o.status!=='rejected').length;
+setRows('assetsBody',state.assets.slice(0,120).map(a=>[a.id,a.title,a.finance,a.unit,a.place,a.holder]));$('assetListNote').textContent=state.assets.length>120?'برای سرعت، ۱۲۰ ردیف اول نمایش داده می‌شود؛ جست‌وجو و گزارش‌ها روی تمام '+state.assets.length+' قلم انجام می‌شود.':'تمام اقلام نمایش داده شده‌اند.';room();report();renderReviewStage();renderUnlabeled();renderObservationReviews();}
+function room(){
+ const loc=currentLoc(),seen=new Set([...state.observations.map(o=>num(o.id)),...state.unlabeled.filter(o=>o.status==='approved').map(o=>num(o.matchId))]);
+ const found=state.assets.filter(a=>sameLoc(a,loc));
+ $('placeCount').textContent=`${found.length} مال در فایل مبنا برای این محل ثبت شده است. برای ثبت مشاهده، روی «انتخاب مال» بزنید؛ ثبت نهایی پس از تأیید شما انجام می‌شود.`;
+ setRows('roomBody',found.map(a=>{
+   const btn=document.createElement('button');btn.type='button';btn.className='secondary';btn.textContent='انتخاب مال';
+   btn.disabled=!!state.reconciliationClosed;
+   btn.onclick=()=>{
+      if(state.reconciliationClosed){alert('برای ثبت مشاهده ابتدا دوره را بازگشایی کنید.');return}
+      $('scanInput').value=a.id;lookup();
+      if(!selected){alert('انتخاب مال انجام نشد.');return}
+      $('assetFound').scrollIntoView({behavior:'smooth',block:'center'});
+   };
+   return [a.id,a.title,seen.has(num(a.id))?'✓ مشاهده ثبت شده':'بررسی‌نشده',btn];
+ }));
+ updateRoomSelection();
+}
+function updateRoomSelection(){
+ const rows=$('roomBody').querySelectorAll('tr');
+ rows.forEach(tr=>{
+  const id=tr.cells[0]?.textContent?.trim()||'';
+  const isSelected=!!selected&&num(selected.id)===num(id);
+  const isSeen=state.observations.some(o=>num(o.id)===num(id)) || state.unlabeled.some(o=>o.status==='approved'&&num(o.matchId)===num(id));
+  tr.classList.toggle('room-selected',isSelected);
+  tr.classList.toggle('room-seen',isSeen);
+  const btn=tr.querySelector('button');if(btn)btn.textContent=isSelected?'✓ انتخاب شده':isSeen?'✓ ثبت شده / انتخاب مجدد':'انتخاب مال';
+ });
+}
+function report(){
+ const rows=state.observations.slice(-200).map(o=>{
+  const a=assetById.get(num(o.id));const bt=document.createElement('button');bt.className='secondary';bt.textContent='حذف';
+  bt.onclick=()=>{if(state.reconciliationClosed){alert('ابتدا دوره را بازگشایی کنید.');return}if(confirm('مشاهده این مال حذف شود؟')){state.observations=state.observations.filter(x=>num(x.id)!==num(o.id));save();refresh()}};
+  return [o.id,a?.title||o.title||'شرح ثبت نشده',a?full(a):'در فهرست نیست',full(o),a?.holder||'—',o.holder,o.condition,issues(a,o),bt]
+ });
+ for(const rec of (state.unlabeled||[]).slice().reverse()){
+   const label=rec.plateState==='damaged'?'پلاک مخدوش':'فاقد پلاک';
+   const status=rec.status==='approved'?'تطبیق تأییدشده با '+rec.matchId:rec.status==='rejected'?'تطبیق ردشده':'در انتظار بررسی';
+   const bt=document.createElement('button');bt.className='secondary';bt.textContent='مشاهده پرونده';
+   bt.onclick=()=>{
+      document.getElementById('unlabeledCases').scrollIntoView({behavior:'smooth',block:'start'});
+      if(!state.reconciliationClosed)alert('پرونده ثبت شده است. بررسی پیشنهادهای تطبیق پس از اعلام پایان اموال‌گردانی فعال می‌شود.');
+   };
+   rows.push([rec.caseId,rec.title, 'مال بدون شماره قابل استعلام',full(rec),'—',rec.holder||'نامشخص',rec.condition,label+' — '+status,bt]);
+ }
+ setRows('reportBody',rows);
+}
+
+// Manual authorization for proposed location / custodian changes; no official system is modified.
+function renderObservationReviews(){
+ const host=$('observationReviews');if(!host)return;host.replaceChildren();
+ if(!state.reconciliationClosed){host.textContent='بررسی نهایی پس از اعلام پایان اموال‌گردانی فعال می‌شود.';return}
+ const items=state.observations.filter(o=>{const a=assetById.get(num(o.id));return a&&( !sameLoc(a,o)||norm(a.holder)!==norm(o.holder))});
+ if(!items.length){host.textContent='مغایرت محل یا تحویل‌گیرنده برای تأیید وجود ندارد.';return}
+ for(const o of items){const a=assetById.get(num(o.id)),c=document.createElement('div');c.className='card';
+  const heading=el('h3',`${o.id} — ${a.title} — ${issues(a,o)}`);c.append(heading);
+  c.append(el('p',`مبنا: ${full(a)} / ${a.holder} | مشاهده: ${full(o)} / ${o.holder}`));
+  c.append(el('p','وضعیت بررسی: '+(o.reviewStatus==='approved'?'تأیید شده':o.reviewStatus==='rejected'?'رد شده':o.reviewStatus==='needs-recheck'?'نیازمند بازبینی دوباره':'در انتظار تصمیم')));
+  const name=document.createElement('input');name.placeholder='نام مسئول تأییدکننده (الزامی)';name.value=o.reviewer||'';
+  const note=document.createElement('input');note.placeholder='شماره مجوز / مستند / توضیح تصمیم';note.value=o.reviewNote||'';
+  const approve=document.createElement('button');approve.className='primary';approve.type='button';approve.textContent='تأیید پیشنهاد اصلاح';
+  approve.onclick=()=>{if(!name.value.trim()||!note.value.trim()){alert('نام مسئول و شماره مجوز یا توضیح تصمیم باید ثبت شود.');return}if(!confirm('اصلاح مشاهده‌شده در گزارش اصلاحات تأیید شود؟ این عملیات اطلاعات اصلی سامانه را تغییر نمی‌دهد.'))return;o.reviewStatus='approved';o.reviewer=name.value.trim();o.reviewNote=note.value.trim();o.reviewTime=new Date().toISOString();save();refresh()};
+  const reject=document.createElement('button');reject.className='secondary';reject.type='button';reject.textContent='رد اصلاح';
+  reject.onclick=()=>{if(!name.value.trim()||!note.value.trim()){alert('نام مسئول و دلیل رد لازم است.');return}o.reviewStatus='rejected';o.reviewer=name.value.trim();o.reviewNote=note.value.trim();o.reviewTime=new Date().toISOString();save();refresh()};
+  c.append(name,note,approve,reject);host.append(c);
+ }
+}
+// Speech numbers are advisory: no automatic observation registration.
+const persianUnits={'صفر':0,'یک':1,'يه':1,'یه':1,'دو':2,'سه':3,'چهار':4,'پنج':5,'شش':6,'هفت':7,'هشت':8,'نه':9,'ده':10,'یازده':11,'دوازده':12,'سیزده':13,'چهارده':14,'پانزده':15,'شانزده':16,'هفده':17,'هجده':18,'نوزده':19,'بیست':20,'سی':30,'چهل':40,'پنجاه':50,'شصت':60,'هفتاد':70,'هشتاد':80,'نود':90,'صد':100,'یکصد':100,'دویست':200,'سیصد':300,'چهارصد':400,'پانصد':500,'ششصد':600,'هفتصد':700,'هشتصد':800,'نهصد':900};
+function parseSpokenPlate(input){
+ const s=norm(input).replace(/[،,؛.\-]/g,' ').replace(/\bو\b/g,' و ').replace(/\s+/g,' ').trim();
+ if(!s)return null;
+ const words=s.split(' ').filter(w=>w!=='و');
+ if(words.every(w=>/^\d$/.test(w)||Object.hasOwn(persianUnits,w)&&persianUnits[w]>=0&&persianUnits[w]<=9))return words.map(w=>/^\d$/.test(w)?w:String(persianUnits[w])).join('');
+ if(/^\d+$/.test(s.replace(/\s/g,'')))return s.replace(/\s/g,'');
+ let total=0,part=0;let seen=false;
+ for(const w of words){if(w==='هزار'||w==='میلیون') {const multiple=w==='هزار'?1000:1000000;total+=(part||1)*multiple;part=0;seen=true;continue}
+  if(/^\d+$/.test(w)){part+=Number(w);seen=true;continue}
+  if(!Object.hasOwn(persianUnits,w))return null;part+=persianUnits[w];seen=true;
+ }
+ return seen?String(total+part):null;
+}
+let voiceRecognition=null;
+$('voiceStart').onclick=()=>{
+ const Engine=window.SpeechRecognition||window.webkitSpeechRecognition;
+ $('voicePanel').classList.remove('hidden');$('voiceNumber').value='';$('voiceText').textContent='';
+ if(!Engine){$('voiceStatus').textContent='تشخیص گفتار در این مرورگر فعال نیست. از Chrome اندروید سازگار استفاده کنید؛ ممکن است اینترنت لازم باشد. ورود دستی همچنان فعال است.';return}
+ try{voiceRecognition=new Engine();voiceRecognition.lang='fa-IR';voiceRecognition.interimResults=false;voiceRecognition.maxAlternatives=1;
+ voiceRecognition.onresult=e=>{const phrase=e.results?.[0]?.[0]?.transcript||'';const digits=parseSpokenPlate(phrase);$('voiceText').textContent='گفتار دریافت‌شده: '+phrase;$('voiceNumber').value=digits||'';$('voiceStatus').textContent=digits?'شماره را با پلاک واقعی کنترل کنید؛ سپس تأیید کنید.':'شماره با اطمینان تبدیل نشد؛ لطفاً تکرار یا دستی اصلاح کنید.'};
+ voiceRecognition.onerror=e=>{$('voiceStatus').textContent='خطای تشخیص صدا: '+e.error+'؛ امکان ورود دستی وجود دارد.'};
+ voiceRecognition.onend=()=>{$('voiceStop').classList.add('hidden')};
+ voiceRecognition.start();$('voiceStop').classList.remove('hidden');$('voiceStatus').textContent='در حال شنیدن شماره پلاک...';
+ }catch(e){$('voiceStatus').textContent='میکروفون فعال نشد: '+e.message}
+};
+$('voiceStop').onclick=()=>voiceRecognition?.stop();
+$('voiceCancel').onclick=()=>{$('voicePanel').classList.add('hidden');voiceRecognition?.abort()};
+$('voiceConfirm').onclick=()=>{const digits=num($('voiceNumber').value);if(!digits){$('voiceStatus').textContent='شماره معتبر نیست؛ لطفاً شماره را اصلاح کنید.';return}if(!confirm('شماره پلاک '+digits+' تأیید می‌شود و جست‌وجو انجام شود؟'))return;$('scanInput').value=digits;$('voicePanel').classList.add('hidden');lookup()};
+
+// Review gate; does not assign or modify plate numbers.
+function renderReviewStage(){
+ const closed=!!state.reconciliationClosed;
+ $('closeSurvey').classList.toggle('hidden',closed);$('reopenSurvey').classList.toggle('hidden',!closed);
+ const unresolved=(state.unlabeled||[]).filter(x=>x.status!=='approved'&&x.status!=='rejected').length;
+ $('reviewStage').textContent=closed?`مرحله بررسی نهایی فعال است. ${unresolved} مورد فاقد/مخدوش در انتظار تصمیم؛ پیشنهادهای تطبیق فقط از فهرست مبنا تهیه می‌شود.`:`اموال‌گردانی باز است. ${(state.unlabeled||[]).length} مورد فاقد/مخدوش ثبت شده؛ تطبیق نهایی هنوز فعال نیست.`;
+}
+$('closeSurvey').onclick=()=>{if(!confirm('پایان اموال‌گردانی این دوره را اعلام می‌کنید؟ پس از آن پیشنهادهای تطبیق و تصمیم مسئول فعال می‌شود.'))return;state.reconciliationClosed=true;save();refresh();};
+$('reopenSurvey').onclick=()=>{if(!confirm('دوره بازگشایی شود؟ تأییدهای پیشین حفظ می‌شوند ولی باید پس از ثبت مشاهدات جدید دوباره بررسی شوند.'))return;state.reconciliationClosed=false;for(const o of state.observations){if(o.reviewStatus==='approved')o.reviewStatus='needs-recheck'}save();refresh();};
+// Unnumbered/mutilated tags: temporary observations, candidate comparison and supervised resolution.
+let unlabelMode='missing';
+const safeLower=v=>norm(v).toLowerCase().replace(/[\u200c\u200e\u200f]/g,'').replace(/[\s،,.\-_/()]+/g,' ');
+const tokens=v=>safeLower(v).split(' ').filter(x=>x.length>1);
+function candidateOptions(rec){
+ const seen=new Set(state.observations.filter(o=>assetById.has(num(o.id))).map(o=>num(o.id)));
+ for(const item of state.unlabeled||[])if(item.status==='approved'&&item.caseId!==rec.caseId&&item.matchId)seen.add(num(item.matchId));
+ const titleTokens=new Set(tokens(rec.title));const holder=safeLower(rec.holder);const partial=num(rec.partialPlate||'');
+ return state.assets.filter(a=>!seen.has(num(a.id))).map(a=>{
+  const titleHit=tokens(a.title).filter(t=>titleTokens.has(t)).length;
+  const titleRatio=titleTokens.size?titleHit/titleTokens.size:0;
+  const sameUnit=norm(a.finance)===norm(rec.finance)&&norm(a.unit)===norm(rec.unit);
+  const samePlace=sameUnit&&norm(a.place)===norm(rec.place);
+  const sameHolder=holder&&holder!=='نامشخص'&&safeLower(a.holder)===holder;
+  const partialMatch=partial.length>=2&&num(a.id).includes(partial);
+  let score=titleRatio*55+(samePlace?22:sameUnit?9:0)+(sameHolder?18:0)+(partialMatch?15:0);
+  if(!titleHit&&!sameHolder&&!partialMatch)return null;
+  return {...a,score:Math.round(score),reasons:[titleHit?'عنوان مشابه':'',samePlace?'محل یکسان':sameUnit?'واحد یکسان':'',sameHolder?'تحویل‌گیرنده یکسان':'',partialMatch?'شماره احتمالی':''].filter(Boolean)};
+ }).filter(Boolean).sort((a,b)=>b.score-a.score).slice(0,10);
+}
+function renderUnlabeled(){
+ const host=$('unlabeledCases');host.replaceChildren();
+ if(!state.reconciliationClosed){host.textContent='موارد فاقد/مخدوش ثبت‌شده تا پایان اموال‌گردانی نگهداری می‌شوند. فهرست موارد ثبت‌شده اکنون در گزارش مغایرت‌ها قابل مشاهده است؛ برای پیشنهاد تطبیق نهایی باید پایان اموال‌گردانی اعلام شود.';return}
+ if(!state.unlabeled.length){host.textContent='هنوز مال فاقد پلاک یا با پلاک مخدوش ثبت نشده است.';return}
+ for(const rec of state.unlabeled.slice().reverse()){
+  const card=document.createElement('div');card.className='card';card.style.borderRight='4px solid #397a9c';
+  const h=document.createElement('h3');h.textContent=`${rec.caseId} — ${rec.plateState==='damaged'?'پلاک مخدوش':'فاقد پلاک'} — ${rec.title}`;card.append(h);
+  const detail=document.createElement('p');detail.className='muted';detail.textContent=`محل مشاهده: ${full(rec)} | تحویل‌گیرنده: ${rec.holder||'نامشخص'} | وضعیت: ${rec.status==='approved'?'تطبیق تأییدشده با پلاک '+rec.matchId:rec.status==='rejected'?'ردشده': 'در انتظار بررسی'} | مأمور: ${rec.agent}`;card.append(detail);
+  const candidates=candidateOptions(rec);
+  const label=document.createElement('label');label.textContent='پیشنهادهای مشابه از موارد بررسی‌نشده';card.append(label);
+  const select=document.createElement('select');select.id='candidate-'+rec.caseId;
+  select.add(new Option('انتخاب مورد مشابه از اکسل (تطبیق قطعی نیست)',''));
+  for(const a of candidates)select.add(new Option(`${a.id} — ${a.title} — ${a.finance}/${a.unit}/${a.place} — ${a.holder} | ${a.reasons.join('، ')} | امتیاز ${a.score}`,a.id));
+  if(rec.matchId&&!candidates.some(a=>a.id===rec.matchId)&&assetById.has(num(rec.matchId))){const a=assetById.get(num(rec.matchId));select.add(new Option(`${a.id} — ${a.title} (تطبیق قبلی)`,a.id))}
+  select.value=rec.matchId||'';card.append(select);
+  const manual=document.createElement('input');manual.placeholder='فقط شماره یک مال موجود در اکسل مبنا (نه شماره جدید)' ;manual.inputMode='numeric';card.append(manual);
+  const name=document.createElement('input');name.placeholder='نام مسئول تأییدکننده *';name.value=rec.reviewer||'';card.append(name);
+  const memo=document.createElement('input');memo.placeholder='توضیحات تأیید / علت رد';memo.value=rec.reviewNote||'';card.append(memo);
+  const actions=document.createElement('div');actions.className='flex';
+  const approve=document.createElement('button');approve.className='primary';approve.textContent='تأیید تطبیق توسط مسئول';approve.onclick=()=>{
+   if(!state.reconciliationClosed){alert('ابتدا پایان اموال‌گردانی را ثبت کنید.');return}
+   const id=num(manual.value)||num(select.value);const reviewer=name.value.trim();
+   if(!reviewer){alert('نام مسئول تأییدکننده را وارد کنید.');return}
+   if(!id||!assetById.has(id)){alert('یک پلاک معتبر از اکسل انتخاب کنید.');return}
+   if(state.observations.some(o=>num(o.id)===id)||state.unlabeled.some(c=>c.caseId!==rec.caseId&&c.status==='approved'&&num(c.matchId)===id)){alert('این مال قبلاً مشاهده یا با مورد دیگری تطبیق داده شده است.');return}
+   if(!confirm(`تطبیق احتمالی «${rec.title}» با پلاک ${id} به تأیید ${reviewer} برسد؟ فایل اصلی اکسل تغییر نمی‌کند.`))return;
+   rec.status='approved';rec.matchId=id;rec.reviewer=reviewer;rec.reviewNote=memo.value.trim();rec.reviewTime=new Date().toISOString();save();refresh();
+  };actions.append(approve);
+  const reject=document.createElement('button');reject.className='secondary';reject.textContent='رد پیشنهاد / بدون تطبیق';reject.onclick=()=>{
+   if(!name.value.trim()){alert('نام مسئول بررسی‌کننده را وارد کنید.');return}
+   if(!confirm('این مورد بدون تطبیق تأییدشده باقی بماند؟'))return;
+   rec.status='rejected';rec.matchId='';rec.reviewer=name.value.trim();rec.reviewNote=memo.value.trim();rec.reviewTime=new Date().toISOString();save();refresh();
+  };actions.append(reject);
+  const pending=document.createElement('button');pending.className='secondary';pending.textContent='بازگشت به در انتظار بررسی';pending.onclick=()=>{if(!confirm('وضعیت تأیید/رد قبلی لغو و به بررسی بازگردد؟'))return;rec.status='pending';rec.matchId='';rec.reviewer='';rec.reviewTime='';save();refresh()};actions.append(pending);
+  card.append(actions);host.append(card);
+ }
+}
+function showUnlabeled(mode){unlabelMode=mode;$('unlabeledHeading').textContent=mode==='damaged'?'ثبت پلاک مخدوش':'ثبت مال فاقد پلاک';$('unlabeledPanel').classList.remove('hidden');$('unlabelMsg').textContent='';$('unlabelTitle').focus()}
+$('noPlateBtn').onclick=()=>showUnlabeled('missing');
+$('damagedPlateBtn').onclick=()=>showUnlabeled('damaged');
+$('cancelUnlabeled').onclick=()=>$('unlabeledPanel').classList.add('hidden');
+$('saveUnlabeled').onclick=()=>{
+ if(state.reconciliationClosed){$('unlabelMsg').textContent='دوره بسته شده است. برای ثبت مشاهده جدید ابتدا آن را بازگشایی کنید.';return}
+ const loc=currentLoc(),title=$('unlabelTitle').value.trim(),agent=$('unlabelAgent').value.trim();
+ if(!loc.finance||!loc.unit||!loc.place){$('unlabelMsg').textContent='ابتدا دفتر مالی، دانشکده/واحد و مکان را انتخاب کنید.';return}
+ if(!title||!agent){$('unlabelMsg').textContent='شرح مال و نام مأمور الزامی است.';return}
+ if(!Array.isArray(state.unlabeled))state.unlabeled=[];
+ const caseId='NP-'+Date.now()+'-'+(state.unlabeled.length+1);
+ const rec={caseId,plateState:unlabelMode,partialPlate:$('partialPlate').value.trim(),title,...loc,holder:$('unlabelHolder').value.trim()||'نامشخص',condition:$('unlabelCondition').value,notes:$('unlabelNotes').value.trim(),agent,time:new Date().toISOString(),status:'pending',matchId:'',reviewer:'',reviewNote:''};
+ state.unlabeled.push(rec);save();refresh();$('unlabeledPanel').classList.add('hidden');$('unlabelTitle').value='';$('partialPlate').value='';$('unlabelNotes').value='';$('scanMsg').textContent=`مورد ${caseId} ثبت شد. این مورد تا پایان عملیات نگهداری می‌شود؛ سپس در بخش «مغایرت‌ها و گزارش» بررسی کنید.`;
+ document.querySelector('[data-tab="report"]').click();
+};
+
+for(const b of document.querySelectorAll('[data-tab]'))b.onclick=()=>{document.querySelectorAll('.tab,.panel').forEach(e=>e.classList.remove('active'));b.classList.add('active');$(b.dataset.tab).classList.add('active')};for(const id of ['finance','unit'])$(id).onchange=()=>{$('placeSearch').value='';refreshLocations();room()};$('placeSearch').oninput=()=>{refreshLocations();room()};$('place').onchange=room;
+let selected=null;
+// USB/Bluetooth HID scanners emulate a keyboard; browser permissions and Web Bluetooth are not needed.
+// The browser cannot tell whether characters came from the scanner or a human typing.
+let btScanCounter=0;
+function btStatus(message,ready=false){$('btReady').textContent=message;$('btReady').classList.toggle('bt-active',ready);$('btReady').classList.toggle('bt-idle',!ready)}
+function scannerFocus(){if(state.reconciliationClosed){btStatus('دوره بسته است');return}const e=$('scanInput');e.focus();e.select();e.classList.add('bt-scan-focus');btStatus('آماده دریافت اسکن',true)}
+$('btFocus').addEventListener('click',scannerFocus);
+$('scanInput').addEventListener('focus',()=>btStatus('آماده دریافت اسکن',true));
+$('scanInput').addEventListener('blur',()=>{$('scanInput').classList.remove('bt-scan-focus');btStatus('کادر اسکن غیرفعال است')});
+function scannerAccept(){const input=$('scanInput');const raw=norm(input.value).trim();if(!raw)return;
+ const id=num(raw);
+ if(!/^[0-9]+$/.test(raw) || !id || raw.length>64){$('scanMsg').textContent='شماره اسکن‌شده نامعتبر است؛ تنظیمات خروجی اسکنر را بررسی کنید.';btStatus('اسکن نامعتبر');return}
+ input.value=id;btScanCounter++;$('btLast').textContent=`آخرین شماره خوانده‌شده: ${id} | تعداد دریافت در این نوبت: ${btScanCounter}`;
+ lookup();if(state.observations.some(o=>num(o.id)===id))$('btHelp').textContent='این پلاک قبلاً مشاهده شده است؛ اطلاعات نمایش داده شده را پیش از هر تغییر کنترل کنید. اسکن تکراری به‌تنهایی ثبت جدید ایجاد نمی‌کند.';
+ else $('btHelp').textContent='پلاک شناسایی شد. مشخصات و محل را کنترل و «ثبت مشاهده و مغایرت» را انتخاب کنید.';
+ btStatus('پلاک دریافت شد؛ در انتظار ثبت');
+}
+function lookup(){if(state.reconciliationClosed){$('scanMsg').textContent='دوره بسته شده است. برای ثبت مشاهده جدید ابتدا آن را بازگشایی کنید.';return}const id=num($('scanInput').value);selected=null;$('assetFound').classList.add('hidden');if(!id){updateRoomSelection();$('scanMsg').textContent='شماره پلاک معتبر وارد کنید.';return}const a=assetById.get(id);const existing=state.observations.find(o=>num(o.id)===id);selected={id,known:!!a,asset:a};$('assetFound').classList.remove('hidden');$('unknownFields').classList.toggle('hidden',!!a);$('unknownTitle').value=existing?.title||'';$('scanMsg').textContent=a?(existing?'این مال قبلاً ثبت شده؛ اطلاعات قابل ویرایش است.':'مال در اکسل شناسایی شد.'):(existing?'مال خارج از فهرست قبلاً ثبت شده؛ اطلاعات قابل ویرایش است.':'این پلاک در کل فایل مبنا وجود ندارد. «ثبت مشاهده و مغایرت» را بزنید تا به عنوان مغایرت خارج از فهرست ثبت شود.');$('assetDetails').textContent=a?`${a.id} — ${a.title} | محل ثبت‌شده: ${full(a)} | تحویل‌گیرنده: ${a.holder}`:`پلاک ${id} — خارج از فهرست اکسل مبنا (ثبت مشاهده، بدون تغییر فایل اصلی)`;$('actualPlace').value=full(existing||currentLoc());$('actualHolder').value=existing?.holder??a?.holder??'';$('condition').value=existing?.condition??'سالم';$('notes').value=existing?.notes??'';$('agent').value=existing?.agent??$('agent').value;updateRoomSelection();}
+$('lookup').onclick=lookup;$('scanInput').onkeydown=e=>{if(e.key==='Enter'||e.key==='Tab'){if(!$('scanInput').value.trim())return;e.preventDefault();scannerAccept()}};$('saveObs').onclick=()=>{if(state.reconciliationClosed){alert('ابتدا دوره را بازگشایی کنید.');return}if(!selected)return;const loc=currentLoc();if(!loc.finance||!loc.unit||!loc.place){alert('ابتدا محل اموال‌گردانی را انتخاب کنید؛ اگر هنوز محل در فایل نیست، در بخش توضیحات ذکر کنید و از یک محدوده موجود شروع کنید.');return}const obs={id:selected.id,...loc,holder:$('actualHolder').value.trim(),condition:$('condition').value,notes:$('notes').value.trim(),agent:$('agent').value.trim(),time:new Date().toISOString()};if(!selected.known){obs.title=$('unknownTitle').value.trim()||'شرح نامشخص';obs.unknown=true}if(!obs.holder){if(!confirm('نام تحویل‌گیرنده مشخص نشده است. مشاهده با تحویل‌گیرنده نامشخص ثبت شود؟'))return;obs.holder='نامشخص'}state.observations=state.observations.filter(x=>num(x.id)!==num(obs.id));state.observations.push(obs);save();$('scanInput').value='';$('assetFound').classList.add('hidden');$('scanMsg').textContent=(obs.unknown?'مغایرت «پلاک خارج از فهرست» ثبت شد: ':'مشاهده ثبت شد: ')+obs.id;selected=null;refresh();if($('btAfterSave').checked){scannerFocus()}else btStatus('مشاهده ثبت شد؛ دریافت بعدی دستی است');};
+function parseCsv(raw){const result=[];let row=[],field='',quoted=false;raw=raw.replace(/^\uFEFF/,'');for(let i=0;i<raw.length;i++){const c=raw[i];if(c==='"'){if(quoted&&raw[i+1]==='"'){field+='"';i++}else quoted=!quoted}else if(c===','&&!quoted){row.push(field);field=''}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&raw[i+1]==='\n')i++;row.push(field);if(row.some(x=>x.trim()))result.push(row);row=[];field=''}else field+=c;}row.push(field);if(row.some(x=>x.trim()))result.push(row);return result}
+ const FIELD_LABELS={id:'شماره پلاک',title:'عنوان کالا',finance:'نام دفتر مالی',unit:'نام انبار',place:'مکان',holder:'تحویل گیرنده'};
+ const ALIASES={id:['شمارهپلاک','شمارهاموال','پلاک','کداموال'],title:['عنوانکالا','شرحکالا','نامکالا','عنوانمال'],finance:['نامدفترمالی','دفترمالی'],unit:['نامانبار','انبار'],place:['مکان','محلاستقرار'],holder:['تحویلگیرنده','نامتحویلگیرنده','امیناموال']};
+ const fixMojibake=s=>{let t=String(s??'');if(/[ÑÏíÝÔãÇÑåÚäæÇßÏ]/.test(t)){try{const bytes=Uint8Array.from(Array.from(t).map(c=>{if(c==='\uf181')return 0x81;if(c==='\uf190')return 0x90;let k=c.charCodeAt(0);return k<=255?k:63}));t=new TextDecoder('windows-1256').decode(bytes)}catch(e){}}return t.replace(/\uf181/g,'پ').replace(/\uf190/g,'گ')};
+ const cleanHeader=v=>norm(fixMojibake(v)).replace(/[\u200c\u200e\u200f\ufeff\s\-_/():،؛.]/g,'').replace(/ۀ/g,'ه').replace(/ة/g,'ه').replace(/آ/g,'ا').replace(/أ|إ/g,'ا');
+ let pendingRows=null, sourceRows=null, chosenHeaderRow=0;
+ function suggestCol(headers,key){
+   const names=ALIASES[key].map(cleanHeader);
+   let hit=headers.findIndex(h=>names.includes(h));if(hit>=0)return hit;
+   const patterns={id:[/^شماره.*پلاک/,/^شماره.*اموال/,/^پلاک.*اموال/,/^کد.*پلاک/],title:[/^عنوان.*کالا/,/^شرح.*کالا/],finance:[/^نام.*دفتر.*مالی/],unit:[/^نام.*انبار/],place:[/^مکان$/, /^محل.*استقرار/],holder:[/^تحویل.*گیرنده/,/^نام.*تحویل.*گیرنده/]};
+   let matches=[];
+   headers.forEach((h,i)=>{if((patterns[key]||[]).some(p=>p.test(h)))matches.push(i)});
+   return matches.length===1?matches[0]:-1;
+ }
+ function scoreHeaderRow(row){
+   const hs=(row||[]).map(cleanHeader);
+   const hits=Object.keys(FIELD_LABELS).filter(k=>suggestCol(hs,k)>=0).length;
+   return hits;
+ }
+ function renderMapping(){
+   const rows=pendingRows,hdr=rows[0].map(fixMojibake),normalized=hdr.map(cleanHeader);
+   $('mapping').replaceChildren();
+   for(const key of Object.keys(FIELD_LABELS)){
+     const box=document.createElement('div');const lab=document.createElement('label');lab.textContent=FIELD_LABELS[key];
+     const sel=document.createElement('select');sel.id='map_'+key;sel.add(new Option('— انتخاب ستون —',''));
+     hdr.forEach((h,i)=>sel.add(new Option((i+1)+' ـ '+(h||'[بدون عنوان]'),String(i))));
+     const suggested=suggestCol(normalized,key);if(suggested>=0)sel.value=String(suggested);
+     box.append(lab,sel);$('mapping').append(box);
+   }
+   const missing=Object.keys(FIELD_LABELS).filter(k=>!$('map_'+k).value);
+   $('mappingNotice').textContent=missing.length?'ستون‌های زیر را دستی انتخاب کنید: '+missing.map(k=>FIELD_LABELS[k]).join('، ')+'. در فایل بزرگ ممکن است عنوان‌ها در سطر دیگری باشند؛ سطر عنوان را نیز بررسی کنید.':'شش ستون اصلی تشخیص داده شدند. لطفاً انتخاب‌ها را با پیش‌نمایش مقایسه کنید.';
+   $('previewText').textContent='سطر عنوان انتخاب‌شده: '+(chosenHeaderRow+1)+' | تعداد ردیف‌های پس از عنوان: '+(rows.length-1)+' | عنوان‌ها: '+hdr.join(' | ');
+   setRows('previewTable',rows.slice(0,5).map(r=>r.map(fixMojibake)));
+ }
+ function chooseHeaderRow(i){
+   chosenHeaderRow=i;pendingRows=sourceRows.slice(i);
+   renderMapping();
+   $('previewError').classList.add('hidden');$('previewError').textContent='';
+ }
+ function preview(rows){
+   if(rows.length<2)throw Error('فایل فاقد ردیف داده است');
+   sourceRows=rows;
+   const limit=Math.min(rows.length-1,40);
+   const rankings=Array.from({length:limit},(_,i)=>({i,score:scoreHeaderRow(rows[i])})).sort((a,b)=>b.score-a.score||a.i-b.i);
+   const likely=rankings[0]?.score>0?rankings[0].i:0;
+   const opts=$('headerRowSelect');opts.replaceChildren();
+   for(let i=0;i<limit;i++){
+     const summary=(rows[i]||[]).filter(x=>String(x??'').trim()).slice(0,4).map(x=>String(fixMojibake(x)).slice(0,35)).join(' / ');
+     opts.add(new Option('سطر '+(i+1)+' — '+summary,String(i)));
+   }
+   opts.value=String(likely);chooseHeaderRow(likely);
+   $('confirmHelp').textContent='ستون‌ها و سطر عنوان را بررسی کنید. سپس تأیید کنید.';
+   $('previewArea').classList.remove('hidden');$('importMsg').textContent='پیش‌نمایش آماده است؛ ابتدا تطبیق ستون‌ها را کنترل کنید.';
+   $('previewArea').scrollIntoView({behavior:'smooth',block:'start'});
+ }
+ $('headerRowSelect').onchange=()=>chooseHeaderRow(Number($('headerRowSelect').value));
+ let importDiagnostics=[];
+ function convertMapped(rows){
+  const cols={};for(const k of Object.keys(FIELD_LABELS)){const v=$('map_'+k).value;if(v==='')throw Error('ستون «'+FIELD_LABELS[k]+'» انتخاب نشده است');cols[k]=Number(v)}
+  if(new Set(Object.values(cols)).size!==Object.keys(cols).length)throw Error('هر ستون فقط به یک فیلد اختصاص داده شود');
+  const out=[],seen=new Set(),problems=[];
+  for(let i=1;i<rows.length;i++){
+   const r=rows[i]||[];if(!r.some(v=>String(v??'').trim()))continue;
+   const a={};for(const k of Object.keys(cols))a[k]=norm(fixMojibake(r[cols[k]]));
+   a.id=num(a.id);
+   if(!a.id){problems.push({row:i+1,reason:'شماره پلاک خالی/نامعتبر'});continue}
+   if(seen.has(a.id)){problems.push({row:i+1,reason:'پلاک تکراری '+a.id});continue}
+   seen.add(a.id);out.push(a);
+  }
+  importDiagnostics=problems;
+  if(!out.length)throw Error('هیچ پلاک معتبر در فایل وجود ندارد. لطفاً تطبیق ستون شماره پلاک را بررسی کنید.');
+  return out;
+ }
+ function downloadProblems(){if(!importDiagnostics.length)return;const lines=[['شماره ردیف اکسل','دلیل'],...importDiagnostics.map(x=>[x.row,x.reason])];download('اشکالات-ورود-اکسل.tsv','\uFEFF'+lines.map(x=>x.join('\t')).join('\r\n'),'text/tab-separated-values;charset=utf-8')}
+ function parseGrid(raw){return raw.includes('\t')?raw.replace(/\r/g,'').split('\n').map(r=>r.split('\t')):parseCsv(raw)}
+ async function loadSheetJs(){if(window.XLSX)return;const urls=['https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js','https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js'];for(const url of urls){try{await Promise.race([new Promise((resolve,reject)=>{const tag=document.createElement('script');tag.src=url;tag.onload=resolve;tag.onerror=reject;document.head.append(tag)}),new Promise((_,reject)=>setTimeout(()=>reject(Error('مهلت دریافت کتابخانه پایان یافت')),8000))]);if(window.XLSX)return}catch(e){}}throw Error('خواندن فایل XLS قدیمی به کتابخانه خارجی نیاز دارد و دریافت آن ناموفق بود. در اکسل Save As > Excel Workbook (*.xlsx) انجام دهید و فایل جدید را وارد کنید.')}
+ // Offline XLSX parser: ZIP local data from central directory, XML rows, shared strings.
+ async function readXlsxOffline(file){
+  if(typeof DecompressionStream==='undefined')throw Error('مرورگر شما از بازکردن XLSX بدون اینترنت پشتیبانی نمی‌کند. از Chrome یا Edge جدید استفاده کنید.');
+  const ab=await file.arrayBuffer(), dv=new DataView(ab), bytes=new Uint8Array(ab), dec=new TextDecoder('utf-8');
+  const u16=i=>dv.getUint16(i,true),u32=i=>dv.getUint32(i,true);
+  let eocd=-1;for(let i=bytes.length-22;i>=Math.max(0,bytes.length-65558);i--)if(u32(i)===0x06054b50){eocd=i;break}
+  if(eocd<0)throw Error('ساختار ZIP فایل XLSX معتبر نیست.');
+  let pos=u32(eocd+16), n=u16(eocd+10);const entries=new Map();
+  for(let k=0;k<n;k++){if(u32(pos)!==0x02014b50)throw Error('ساختار فهرست XLSX نامعتبر است');let method=u16(pos+10),size=u32(pos+20),nameLen=u16(pos+28),extra=u16(pos+30),comment=u16(pos+32),local=u32(pos+42),name=dec.decode(bytes.subarray(pos+46,pos+46+nameLen));entries.set(name,{method,size,local});pos+=46+nameLen+extra+comment}
+  async function entry(name){const e=entries.get(name);if(!e)return null;let at=e.local;if(u32(at)!==0x04034b50)throw Error('بخش فایل اکسل نامعتبر است');let offset=at+30+u16(at+26)+u16(at+28),chunk=bytes.slice(offset,offset+e.size);if(e.method===0)return dec.decode(chunk);if(e.method!==8)throw Error('نوع فشرده‌سازی XLSX پشتیبانی نمی‌شود');try{const stream=new Blob([chunk]).stream().pipeThrough(new DecompressionStream('deflate-raw'));return dec.decode(await new Response(stream).arrayBuffer())}catch(err){throw Error('مرورگر نتوانست فایل XLSX را باز کند: '+err.message)}}
+  const xmlParser=new DOMParser();const doc=xml=>{let d=xmlParser.parseFromString(xml,'application/xml');if(d.querySelector('parsererror'))throw Error('ساختار XML فایل اکسل معتبر نیست');return d};
+  const local=(node,name)=>[...node.getElementsByTagName('*')].filter(e=>e.localName===name);
+  const sharedXml=await entry('xl/sharedStrings.xml');const shared=sharedXml?local(doc(sharedXml),'si').map(si=>local(si,'t').map(t=>t.textContent).join('')):[];
+  const wbxml=await entry('xl/workbook.xml');let path='xl/worksheets/sheet1.xml';
+  if(wbxml){let wbd=doc(wbxml);let sheet=local(wbd,'sheet')[0];if(sheet){let relid=sheet.getAttribute('r:id')||sheet.getAttributeNS('http://schemas.openxmlformats.org/officeDocument/2006/relationships','id');let relxml=await entry('xl/_rels/workbook.xml.rels');if(relxml&&relid){let relationship=local(doc(relxml),'Relationship').find(r=>r.getAttribute('Id')===relid);if(relationship){let target=relationship.getAttribute('Target');path=target.startsWith('/')?target.slice(1):(target.startsWith('xl/')?target:'xl/'+target.replace(/^\.\//,''));}}}}
+  let sheetXml=await entry(path);if(!sheetXml){let alt=[...entries.keys()].find(x=>/^xl\/worksheets\/sheet\d+\.xml$/.test(x));sheetXml=alt?await entry(alt):null}
+  if(!sheetXml)throw Error('برگه اطلاعات در فایل اکسل پیدا نشد');
+  let sheetDoc=doc(sheetXml),out=[],max=0;
+  function indexFromA1(ref){let m=/^[A-Z]+/i.exec(ref||'');if(!m)return -1;let n=0;for(let c of m[0].toUpperCase())n=n*26+c.charCodeAt(0)-64;return n-1}
+  for(const row of local(sheetDoc,'row')){let cells=[],seq=0;for(const c of [...row.children].filter(n=>n.localName==='c')){let idx=indexFromA1(c.getAttribute('r'));if(idx<0)idx=seq;seq=idx+1;let type=c.getAttribute('t'),v=[...c.children].find(n=>n.localName==='v'),inline=[...c.children].find(n=>n.localName==='is');let value=v?v.textContent:(inline?local(inline,'t').map(t=>t.textContent).join(''):'');if(type==='s')value=shared[Number(value)]??'';if(type==='b')value=value==='1'?'TRUE':'FALSE';cells[idx]=value}if(cells.some(v=>String(v??'').trim())){out.push(cells);max=Math.max(max,cells.length)}}
+  if(out.length<2)throw Error('فایل XLSX دارای اطلاعات کافی نیست');
+  return out;
+ }
+ $('confirmImport').onclick=async()=>{
+  const btn=$('confirmImport');$('previewError').classList.add('hidden');$('previewError').textContent='';
+  if(!pendingRows){$('previewError').textContent='ابتدا فایل را انتخاب کنید.';$('previewError').classList.remove('hidden');return}
+  try{
+   btn.disabled=true;btn.textContent='در حال اعتبارسنجی...';$('confirmHelp').textContent='در حال کنترل شماره پلاک‌ها...';
+   await new Promise(r=>setTimeout(r,60));const arr=convertMapped(pendingRows);
+   const warning=importDiagnostics.length?` تعداد ${importDiagnostics.length} ردیف با پلاک خالی یا تکراری کنار گذاشته شده است.`:'';
+   $('confirmHelp').textContent=arr.length+' ردیف معتبر تشخیص داده شد.'+warning;
+   if(!confirm(`${arr.length} رکورد معتبر وارد شود؟${warning}\nمشاهدات آزمایشی قبلی جایگزین می‌شود.`))return;
+   const previous=state;state={assets:arr,observations:[],unlabeled:[],reconciliationClosed:false};selected=null;
+   try{await save()}catch(e){state=previous;throw Error('ذخیره در مرورگر ناموفق بود: '+e.message)}
+   refresh();$('previewArea').classList.add('hidden');pendingRows=null;
+   $('fileStatus').textContent='ورود موفق: '+arr.length+' رکورد. '+warning;
+   $('importMsg').textContent='ورود نهایی '+arr.length+' مال انجام شد. شماره نخست: '+arr[0].id+'. '+warning;
+   if(importDiagnostics.length){downloadProblems();$('importMsg').textContent+=' گزارش ردیف‌های ردشده دانلود شد.'}
+  }catch(e){const msg='خطای ورود: '+e.message;$('previewError').textContent=msg;$('previewError').classList.remove('hidden');$('confirmHelp').textContent=msg;$('importMsg').textContent=msg;console.error(e)}
+  finally{btn.disabled=false;btn.textContent='تأیید ستون‌ها و ورود اطلاعات'}
+ };
+ $('cancelImport').onclick=()=>{$('previewArea').classList.add('hidden');pendingRows=null};
+async function applyImport(arr){if(!confirm(`${arr.length} مال وارد می‌شود و مشاهدات قبلی پاک خواهند شد. ادامه می‌دهید؟`))return false;const previous=state;state={assets:arr,observations:[],unlabeled:[],reconciliationClosed:false};selected=null;try{await save()}catch(e){state=previous;throw e}refresh();$('importMsg').textContent=`${arr.length} مال با موفقیت بارگذاری شد. شماره نخست: ${arr[0].id}`;return true}
+$('importPaste').onclick=()=>{try{const raw=$('pasteExcel').value.trim();if(!raw)throw Error('ابتدا جدول اکسل را جای‌گذاری کنید');preview(parseGrid(raw))}catch(e){$('importMsg').textContent='خطا: '+e.message}};
+$('csvFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{$('fileStatus').textContent='در حال پردازش '+f.name+' ('+(f.size/1024/1024).toFixed(2)+' مگابایت) ...';$('importMsg').textContent='';$('previewArea').classList.add('hidden');pendingRows=null;await new Promise(r=>setTimeout(r,30));let rows;if(/\.(csv|tsv|txt)$/i.test(f.name)){let raw=await f.text();rows=/\.csv$/i.test(f.name)?parseCsv(raw):parseGrid(raw)}else if(/\.xlsx$/i.test(f.name)){try{rows=await readXlsxOffline(f)}catch(nativeError){$('fileStatus').textContent='خواندن داخلی XLSX انجام نشد؛ تلاش با کتابخانه جایگزین...';try{await loadSheetJs();const book=XLSX.read(await f.arrayBuffer(),{type:'array',raw:false});rows=XLSX.utils.sheet_to_json(book.Sheets[book.SheetNames[0]],{header:1,defval:'',raw:false})}catch(libError){throw Error('خواندن XLSX ناموفق: '+nativeError.message+' / روش جایگزین: '+libError.message)}}}else if(/\.xls$/i.test(f.name)){await loadSheetJs();let book=XLSX.read(await f.arrayBuffer(),{type:'array',cellText:true,raw:false});rows=XLSX.utils.sheet_to_json(book.Sheets[book.SheetNames[0]],{header:1,defval:'',raw:false})}else throw Error('فرمت فایل پشتیبانی نمی‌شود');preview(rows);$('fileStatus').textContent='خواندن موفق: '+(rows.length-1)+' ردیف از '+f.name+'؛ ستون‌ها را بررسی و ورود را تأیید کنید.'}catch(err){$('importMsg').textContent='خطای دقیق: '+err.message;$('fileStatus').textContent='ورود فایل ناموفق بود: '+f.name+' — '+err.message;console.error(err)}};
+$('resetDemo').onclick=()=>{if(confirm('داده‌ها و مشاهدات فعلی با سه ردیف نمونه جایگزین شوند؟')){state={assets:DEMO,observations:[],unlabeled:[],reconciliationClosed:false};save();refresh()}};
+function download(name,content,mime){const blob=new Blob([content],{type:mime}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+$('exportBackup').onclick=()=>download('پشتیبان-دستیار-اموال.json',JSON.stringify(state,null,2),'application/json;charset=utf-8');$('importBackupBtn').onclick=()=>$('backupFile').click();$('backupFile').onchange=async e=>{try{const x=JSON.parse(await e.target.files[0].text());if(!Array.isArray(x.assets)||!Array.isArray(x.observations))throw Error('فرمت پشتیبان نامعتبر');if(confirm('پشتیبان جایگزین داده‌های فعلی شود؟')){state=x;save();refresh()}}catch(err){alert(err.message)}};
+function csv(rows){return '\uFEFF'+rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n')};
+// Self-contained XLSX (ZIP/OOXML, no remote library required). Does not transmit user data.
+function xmlEscape(v){return String(v??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;').replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g,'')}
+function colName(n){let s='';for(let v=n+1;v>0;v=Math.floor((v-1)/26))s=String.fromCharCode(65+(v-1)%26)+s;return s}
+function makeSheetXML(rows){
+ const maxCols=Math.max(1,...rows.map(r=>r.length));
+ const colWidths=Array.from({length:maxCols},(_,j)=>{
+   const texts=rows.slice(0,80).map(r=>String(r[j]??''));
+   const header=texts[0]||'';
+   const longest=Math.max(...texts.map(x=>Math.min(x.length,62)));
+   const w=Math.max(17,Math.min(38,Math.max(header.length*1.6,longest*0.9)+3));
+   return '<col min="'+(j+1)+'" max="'+(j+1)+'" width="'+w.toFixed(1)+'" customWidth="1"/>';
+ }).join('');
+ const xmlRows=rows.map((row,i)=>'<row r="'+(i+1)+'"'+(i===0?' ht="45" customHeight="1"':'')+'>'+row.map((raw,j)=>{
+  const text=String(raw??'');if(!text)return '';
+  const value=xmlEscape(text);return '<c r="'+colName(j)+(i+1)+'" t="inlineStr" s="'+(i===0?1:0)+'"><is><t xml:space="preserve">'+value+'</t></is></c>';
+ }).join('')+'</row>').join('');
+ const last=colName(maxCols-1);
+ return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><dimension ref="A1:'+last+Math.max(1,rows.length)+'"/><sheetViews><sheetView workbookViewId="0" rightToLeft="1"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><sheetFormatPr defaultRowHeight="21"/><cols>'+colWidths+'</cols><sheetData>'+xmlRows+'</sheetData><autoFilter ref="A1:'+last+Math.max(1,rows.length)+'"/></worksheet>';
+}
+function crc32(bytes){let table=crc32.table;if(!table){table=new Uint32Array(256);for(let i=0;i<256;i++){let c=i;for(let j=0;j<8;j++)c=c&1?0xEDB88320^(c>>>1):c>>>1;table[i]=c>>>0}crc32.table=table}let c=0xFFFFFFFF;for(let i=0;i<bytes.length;i++)c=table[(c^bytes[i])&255]^(c>>>8);return(c^0xFFFFFFFF)>>>0}
+function archiveStore(files){const enc=new TextEncoder(),chunks=[],central=[];let offset=0;
+ const u16=(a,p,v)=>{a[p]=v&255;a[p+1]=(v>>>8)&255};const u32=(a,p,v)=>{u16(a,p,v&65535);u16(a,p+2,(v>>>16)&65535)};
+ for(const [path,data] of files){const name=enc.encode(path),bytes=enc.encode(data),crc=crc32(bytes);const local=new Uint8Array(30+name.length);u32(local,0,0x04034b50);u16(local,4,20);u16(local,6,0x0800);u16(local,8,0);u32(local,14,crc);u32(local,18,bytes.length);u32(local,22,bytes.length);u16(local,26,name.length);local.set(name,30);chunks.push(local,bytes);
+ const c=new Uint8Array(46+name.length);u32(c,0,0x02014b50);u16(c,4,20);u16(c,6,20);u16(c,8,0x0800);u32(c,16,crc);u32(c,20,bytes.length);u32(c,24,bytes.length);u16(c,28,name.length);u32(c,42,offset);c.set(name,46);central.push(c);offset+=local.length+bytes.length}
+ const cdSize=central.reduce((a,x)=>a+x.length,0),end=new Uint8Array(22);u32(end,0,0x06054b50);u16(end,8,central.length);u16(end,10,central.length);u32(end,12,cdSize);u32(end,16,offset);return new Blob([...chunks,...central,end],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+}
+function workbookBlob(sheets){
+ const files=[];files.push(['[Content_Types].xml','<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>'+sheets.map((s,i)=>'<Override PartName="/xl/worksheets/sheet'+(i+1)+'.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>').join('')+'</Types>']);
+ files.push(['_rels/.rels','<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>']);
+ files.push(['xl/workbook.xml','<?xml version="1.0" encoding="UTF-8"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>'+sheets.map((s,i)=>'<sheet name="'+xmlEscape(s.name)+'" sheetId="'+(i+1)+'" r:id="rId'+(i+1)+'"/>').join('')+'</sheets></workbook>']);
+ files.push(['xl/_rels/workbook.xml.rels','<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'+sheets.map((s,i)=>'<Relationship Id="rId'+(i+1)+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet'+(i+1)+'.xml"/>').join('')+'<Relationship Id="rId'+(sheets.length+1)+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>']);
+ files.push(['xl/styles.xml','<?xml version="1.0" encoding="UTF-8"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="11"/><name val="Tahoma"/></font><font><b/><sz val="11"/><color rgb="FFFFFFFF"/><name val="Tahoma"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF173B5E"/><bgColor indexed="64"/></patternFill></fill></fills><borders count="1"><border/></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="2"><xf fontId="0" fillId="0" borderId="0" xfId="0" applyAlignment="1"><alignment horizontal="right" vertical="center" readingOrder="2"/></xf><xf fontId="1" fillId="2" borderId="0" xfId="0" applyFill="1" applyAlignment="1"><alignment horizontal="right" vertical="center" wrapText="1" readingOrder="2"/></xf></cellXfs></styleSheet>']);
+ sheets.forEach((s,i)=>files.push(['xl/worksheets/sheet'+(i+1)+'.xml',makeSheetXML(s.rows)]));return archiveStore(files);
+}
+function downloadWorkbook(name,sheets){const b=workbookBlob(sheets);download(name+'.xlsx',b,'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')}
+function downloadExcelRows(name,rows){const shortName=name.replace(/^گزارش-/,'').slice(0,31);downloadWorkbook(name,[{name:shortName||'گزارش اموال',rows}])}
+$('exportCsv').textContent='خروجی اکسل مشاهدات و مغایرت‌ها';
+$('exportUnseen').textContent='خروجی اکسل اموال بررسی‌نشده';
+$('exportCsv').onclick=()=>{const r=[['شماره پلاک','عنوان','دفتر مالی مبنا','واحد مبنا','مکان مبنا','تحویل گیرنده مبنا','دفتر مالی مشاهده','واحد مشاهده','مکان مشاهده','تحویل گیرنده مشاهده','وضعیت فیزیکی','نتیجه','مأمور','زمان','توضیحات']];state.observations.forEach(o=>{const a=state.assets.find(x=>num(x.id)===num(o.id));r.push([o.id,a?.title||o.title||'',a?.finance||'',a?.unit||'',a?.place||'',a?.holder||'',o.finance,o.unit,o.place,o.holder,o.condition,issues(a,o),o.agent,o.time,o.notes])});downloadExcelRows('گزارش-مشاهدات-و-مغایرت‌ها',r)};
+$('exportUnseen').onclick=()=>{const seen=new Set([...state.observations.map(o=>num(o.id)),...state.unlabeled.filter(o=>o.status==='approved').map(o=>num(o.matchId))]);downloadExcelRows('گزارش-اموال-بررسی‌نشده',[['شماره پلاک','عنوان','دفتر مالی','انبار','مکان','تحویل‌گیرنده','وضعیت'],...state.assets.filter(a=>!seen.has(num(a.id))).map(a=>[a.id,a.title,a.finance,a.unit,a.place,a.holder,'بررسی‌نشده'])])};
+$('exportUnlabeled').onclick=()=>{
+ const header=['شناسه موقت','نوع پلاک','شماره ناقص','شرح مشاهده‌شده','دفتر مالی','انبار','مکان مشاهده','تحویل‌گیرنده واقعی','وضعیت فیزیکی','وضعیت رسیدگی','پلاک تطبیق داده‌شده','مسئول تأیید','زمان رسیدگی','مأمور','زمان مشاهده','توضیحات'];
+ const rows=[header,...state.unlabeled.map(o=>[o.caseId,o.plateState==='damaged'?'پلاک مخدوش':'فاقد پلاک',o.partialPlate,o.title,o.finance,o.unit,o.place,o.holder,o.condition,o.status==='approved'?'تأییدشده':o.status==='rejected'?'ردشده':'در انتظار بررسی',o.matchId,o.reviewer,o.reviewTime,o.agent,o.time,[o.notes,o.reviewNote].filter(Boolean).join(' | ')])];
+ downloadExcelRows('گزارش-فاقد-پلاک-و-مخدوش',rows)
+};
+$('exportPending').onclick=()=>{
+ const rows=[['شناسه موقت یا پلاک','نوع مورد','شرح','دفتر مالی','انبار','مکان','تحویل‌گیرنده','وضعیت رسیدگی','توضیحات']];
+ for(const x of (state.unlabeled||[]).filter(x=>x.status!=='approved'))rows.push([x.caseId,x.plateState==='damaged'?'پلاک مخدوش':'فاقد پلاک',x.title,x.finance,x.unit,x.place,x.holder,x.status==='rejected'?'تطبیق رد شده':'در انتظار تصمیم',x.notes||'']);
+ for(const x of state.observations.filter(x=>!assetById.has(num(x.id))))rows.push([x.id,'پلاک خوانا خارج از فهرست',x.title||'',x.finance,x.unit,x.place,x.holder,'نیازمند استعلام سامانه',x.notes||'']);
+ downloadExcelRows('گزارش-موارد-تعیین‌تکلیف‌نشده',rows)
+};
+const observedHeader=['شماره پلاک یا شناسه موقت','شرح مال','دفتر مالی مبنا','واحد مبنا','مکان مبنا','تحویل‌گیرنده مبنا','دفتر مالی مشاهده','واحد مشاهده','مکان مشاهده','تحویل‌گیرنده واقعی','وضعیت فیزیکی','نوع مغایرت','وضعیت بررسی','نام مسئول','شماره مجوز / توضیحات','نام مأمور','تاریخ ثبت'];
+function allObservedRows(){const rows=[observedHeader];for(const o of state.observations){const a=assetById.get(num(o.id));rows.push([o.id,a?.title||o.title||'',a?.finance||'',a?.unit||'',a?.place||'',a?.holder||'',o.finance,o.unit,o.place,o.holder,o.condition,issues(a,o),o.reviewStatus==='approved'?'تأیید اصلاح':o.reviewStatus==='rejected'?'رد اصلاح':o.reviewStatus==='needs-recheck'?'نیازمند بازبینی':'در انتظار / فاقد تصمیم',o.reviewer||'',o.reviewNote||o.notes||'',o.agent||'',o.time||''])}
+ for(const o of state.unlabeled){rows.push([o.caseId,o.title,'','','','',o.finance,o.unit,o.place,o.holder,o.condition,o.plateState==='damaged'?'پلاک مخدوش':'فاقد پلاک',o.status==='approved'?'تطبیق تأیید شده با '+o.matchId:o.status==='rejected'?'تطبیق رد شده':'در انتظار تطبیق',o.reviewer||'',o.reviewNote||o.notes||'',o.agent||'',o.time||''])}return rows}
+function unseenRows(){const seen=new Set([...state.observations.filter(o=>assetById.has(num(o.id))).map(o=>num(o.id)),...state.unlabeled.filter(o=>o.status==='approved').map(o=>num(o.matchId))]);return [['شماره پلاک','عنوان','دفتر مالی','انبار','مکان','تحویل‌گیرنده','وضعیت'],...state.assets.filter(a=>!seen.has(num(a.id))).map(a=>[a.id,a.title,a.finance,a.unit,a.place,a.holder,'بررسی‌نشده'])]}
+function issuesRows(){const rows=allObservedRows();return [rows[0],...rows.slice(1).filter(r=>r[11]!=='بدون مغایرت')]}
+function approvedCorrectionsRows(){const h=['نوع اقدام پیشنهادی','شماره پلاک موجود در سامانه','شناسه موقت','شرح مال','دفتر مالی قبلی','انبار قبلی','مکان قبلی','تحویل‌گیرنده قبلی','دفتر مالی مشاهده','انبار مشاهده','مکان مشاهده','تحویل‌گیرنده واقعی','مسئول تأیید','تاریخ تأیید','شماره مجوز / توضیح','وضعیت انتقال'];const r=[h];
+ for(const o of state.observations){const a=assetById.get(num(o.id));if(!a||o.reviewStatus!=='approved'||(sameLoc(a,o)&&norm(a.holder)===norm(o.holder)))continue;r.push(['پیشنهاد اصلاح محل / تحویل‌گیرنده',a.id,'',a.title,a.finance,a.unit,a.place,a.holder,o.finance,o.unit,o.place,o.holder,o.reviewer||'',o.reviewTime||'',o.reviewNote||'','صرفاً فایل پیشنهادی؛ در سامانه اعمال نشده'])}
+ for(const o of state.unlabeled){if(o.status!=='approved')continue;const a=assetById.get(num(o.matchId));if(!a)continue;r.push(['تطبیق فاقد/مخدوش با پلاک موجود',a.id,o.caseId,o.title,a.finance,a.unit,a.place,a.holder,o.finance,o.unit,o.place,o.holder,o.reviewer||'',o.reviewTime||'',o.reviewNote||'','صرفاً تطبیق دوره؛ بررسی پیش از اعمال لازم است'])}return r}
+$('exportSeen').onclick=()=>downloadExcelRows('گزارش-اموال-مشاهده‌شده',allObservedRows());
+$('exportIssues').onclick=()=>downloadExcelRows('گزارش-مغایرت‌ها',issuesRows());
+$('exportFinal').onclick=()=>{if(!state.reconciliationClosed){alert('ابتدا پایان اموال‌گردانی را اعلام کنید. گزارش موقت و مستقل در دسترس است.');return}
+ const rows=allObservedRows(),unseen=unseenRows(),issues=issuesRows();const summary=[['شاخص','تعداد'],['تعداد اموال اکسل مبنا',state.assets.length],['اموال مشاهده شده دارای پلاک',state.observations.filter(o=>assetById.has(num(o.id))).length],['اموال فاقد یا مخدوش',state.unlabeled.length],['اموال بررسی نشده پس از تطبیق',unseen.length-1],['مشاهدات و پرونده‌های دارای مغایرت',issues.length-1],['اصلاحات تأیید شده پیشنهادی',approvedCorrectionsRows().length-1],['وضعیت دوره','پایان اعلام شده؛ تصمیم‌های باز همچنان نیازمند پیگیری']];
+ downloadWorkbook('گزارش-جامع-نهایی-اموال‌گردانی',[{name:'خلاصه مدیریتی',rows:summary},{name:'مشاهدات و مغایرت‌ها',rows},{name:'مغایرت‌ها',rows:issues},{name:'بررسی نشده',rows:unseen},{name:'فاقد و مخدوش',rows:[rows[0],...rows.slice(1).filter(r=>r[0].startsWith('NP-'))]},{name:'اصلاحات تأیید شده',rows:approvedCorrectionsRows()}]);
+};
+$('exportCorrections').onclick=()=>{if(!state.reconciliationClosed){alert('فایل اصلاحات تأییدشده فقط بعد از پایان اموال‌گردانی صادر می‌شود.');return}const rows=approvedCorrectionsRows();if(rows.length===1){alert('هیچ اصلاح تأییدشده‌ای برای انتقال وجود ندارد.');return}downloadExcelRows('گزارش-اصلاحات-تأییدشده',rows)};
+$('clearObs').onclick=()=>{if(confirm('همه مشاهدات ثبت‌شده حذف شوند؟')){state.observations=[];state.unlabeled=[];state.reconciliationClosed=false;save();refresh()}};
+// Barcode scanning: local image and live camera; requires native BarcodeDetector.
+let stream=null, cameraTimer=null, cameraBusy=false, cameraDetector=null;
+const BARCODE_FORMATS=['code_128','code_39','code_93','codabar','ean_13','ean_8','itf','upc_a','upc_e','qr_code'];
+function cameraInfo(message){$('cameraStatus').textContent=message;$('cameraStatus').classList.remove('hidden')}
+function stopCamera(){if(cameraTimer)clearInterval(cameraTimer);cameraTimer=null;const previous=stream;stream=null;if(previous)previous.getTracks().forEach(t=>t.stop());const v=$('video');v.pause();v.srcObject=null;v.classList.add('hidden');$('stopCamera').classList.add('hidden');cameraBusy=false;cameraDetector=null}
+$('stopCamera').onclick=()=>{stopCamera();cameraInfo('اسکن دوربین متوقف شد.')};
+async function barcodeDetector(){if(!('BarcodeDetector' in window))throw Error('مرورگر شما از BarcodeDetector پشتیبانی نمی‌کند. لطفاً از Chrome یا Edge به‌روز روی دستگاه سازگار، بارکدخوان بلوتوث/USB یا ورود دستی استفاده کنید.');let available=BARCODE_FORMATS; if(typeof BarcodeDetector.getSupportedFormats==='function'){available=await BarcodeDetector.getSupportedFormats();available=BARCODE_FORMATS.filter(x=>available.includes(x))}if(!available.length)throw Error('هیچ‌یک از انواع بارکد موردنظر روی این مرورگر پشتیبانی نمی‌شوند.');return new BarcodeDetector({formats:available})}
+function acceptBarcode(value,format){const raw=String(value||'').trim();const digits=num(raw);if(!digits){cameraInfo('بارکد خوانده شد اما شماره عددی پلاک در آن پیدا نشد. مقدار: '+raw);return false}if(raw.replace(/[۰-۹٠-٩]/g,c=>String('۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩'.indexOf(c)%10)).replace(/[\s\-]/g,'')!==digits){cameraInfo('بارکد دارای کاراکترهای اضافی بود. شماره استخراج‌شده را قبل از ثبت بررسی کنید: '+digits)}$('scanInput').value=digits;stopCamera();lookup();$('scanMsg').textContent='بارکد '+(format||'')+' خوانده شد؛ پلاک '+digits+' '+(assetById.has(digits)?'در اکسل موجود است.':'در اکسل موجود نیست؛ می‌توانید آن را به عنوان مغایرت ثبت کنید.');$('scanInput').focus();return true}
+$('startCamera').onclick=async()=>{stopCamera();$('cameraStatus').classList.add('hidden');try{cameraDetector=await barcodeDetector();if(!window.isSecureContext||!navigator.mediaDevices?.getUserMedia)throw Error('برای استفاده از دوربین زنده، برنامه باید از آدرس امن HTTPS یا localhost اجرا شود؛ بازکردن فایل HTML به‌صورت مستقیم روی بعضی دستگاه‌ها کافی نیست. از گزینه «خواندن بارکد از عکس» یا بارکدخوان USB/بلوتوث استفاده کنید.');stream=await navigator.mediaDevices.getUserMedia({audio:false,video:{facingMode:{ideal:'environment'},width:{ideal:1280},height:{ideal:720}}});const v=$('video');v.srcObject=stream;v.classList.remove('hidden');$('stopCamera').classList.remove('hidden');await v.play();cameraInfo('دوربین فعال است. بارکد میله‌ای را در مرکز تصویر و با نور کافی قرار دهید.');cameraTimer=setInterval(async()=>{if(cameraBusy||!stream||v.readyState<2)return;cameraBusy=true;try{const results=await cameraDetector.detect(v);for(const result of results){if(acceptBarcode(result.rawValue,result.format))break}}catch(e){cameraInfo('خطا در تشخیص بارکد: '+e.message);stopCamera()}finally{cameraBusy=false}},400)}catch(e){stopCamera();cameraInfo('اسکن دوربین فعال نشد: '+e.message)}};
+$('photoBarcodeBtn').onclick=()=>$('barcodePhoto').click();
+$('barcodePhoto').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const det=await barcodeDetector();let target;try{target=await createImageBitmap(file)}catch(err){throw Error('مرورگر نتوانست این عکس را بخواند؛ لطفاً از عکس JPG یا PNG استفاده کنید.')}try{const results=await det.detect(target);if(results.length){let good=false;for(const result of results){if(acceptBarcode(result.rawValue,result.format)){good=true;break}}if(!good)cameraInfo('بارکد عددی در عکس شناسایی نشد.')}else cameraInfo('بارکد در عکس تشخیص داده نشد. عکس واضح‌تر، مستقیم و با نور کافی بگیرید.')}finally{target.close?.()}}catch(err){cameraInfo('خواندن عکس ناموفق بود: '+err.message)}finally{e.target.value=''}};
+// Keyboard-wedge scanners enter digits in the input; many append Enter.
+$('scanInput').addEventListener('input',()=>{const val=$('scanInput').value;if(val.length>64)$('scanMsg').textContent='شماره واردشده طولانی است؛ لطفاً تنظیمات خروجی بارکدخوان را بررسی کنید.'});
+
+restore();
+</script><script>
+if ('serviceWorker' in navigator && window.isSecureContext) {
+ window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js').catch(e=>console.warn('SW unavailable:',e)));
+}
+</script></body></html>
